@@ -11,9 +11,14 @@ public class Backpack
 
 	private void packAndCheck()
 	{
+		Pencil idk = new Pencil("pencil");
+		 Ruler idc = new Ruler("ruler");
+		 Textbook idgaf = new Textbook("textbook");
 		// Your mission is to go to school.
 		// 1. First you need to put all your supplies into your backpack - use the putInBackpack(...) methods
-
+		putInBackpack(idk);
+		putInBackpack(idc);
+		putInBackpack(idgaf);
 		goToSchool();
 	}
 
@@ -79,6 +84,10 @@ class Pencil extends Supply
 		System.out.println("You got your pencil!");
 	}
 
+	public Pencil(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void write(String writing)
 	{
 		System.out.println(writing);
@@ -93,6 +102,10 @@ class Ruler extends Supply
 		System.out.println("You found your ruler!!");
 	}
 
+	public Ruler(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void measure()
 	{
 		System.out.println("Now you can measure your mouse!");
@@ -105,6 +118,10 @@ class Textbook extends Supply
 	{
 		this.name = "textbook";
 		System.out.println("You got your boring textbook");
+	}
+
+	public Textbook(String string) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public void read()
