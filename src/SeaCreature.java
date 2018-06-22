@@ -8,11 +8,14 @@
  * 2. Make Patrick and Squidward and print their name, have them eat, and make them laugh.
  */
 
-
-import javax.swing.JApplet;
 import java.applet.AudioClip;
 
+import javax.swing.JApplet;
+
 public class SeaCreature {
+	public static void main(String[] args) {
+
+	}
 
 	private String name;
 
@@ -30,8 +33,8 @@ public class SeaCreature {
 
 	public void laugh() {
 		try {
-		    AudioClip sound = JApplet.newAudioClip(getClass().getResource(this.name + ".wav"));
-		    sound.play();
+			AudioClip sound = JApplet.newAudioClip(getClass().getResource(this.name + ".wav"));
+			sound.play();
 			Thread.sleep(3400);
 		} catch (Exception ex) {
 			ex.printStackTrace();
