@@ -13,9 +13,6 @@ import java.applet.AudioClip;
 import javax.swing.JApplet;
 
 public class SeaCreature {
-	public static void main(String[] args) {
-
-	}
 
 	private String name;
 

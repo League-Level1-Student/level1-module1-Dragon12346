@@ -2,17 +2,30 @@
 
 public class SmurfRunner {
 public static void main(String[] args) {
+	String girl = "";
 	Smurf q = new Smurf("Handy");
 	q.getName();
 	q.eat();
 
-	Smurf w = new Smurf("Smurfette");
-	System.out.println(w.getName() + w.getHatColor() + w.isGirlOrBoy());
-	
-	
 	Smurf e = new Smurf("Papa");
-	e.getName();
-	e.getHatColor();
-	e.isGirlOrBoy();
+	if (e.isGirl()) {
+		girl = "girl";
+	}
+	else {
+		girl = "boy";
+	}
+	System.out.println("My name is " + e.getName() + ". I have a " + e.getHatColor() + " hat and I am a " + girl + ".");
+	
+	Smurf w = new Smurf("Smurfette");
+	if (w.isGirl()) {
+		girl = "girl";
+	}
+	else {
+		girl = "boy";
+	}
+	System.out.println("My name is " + w.getName() + ". I have a " + w.getHatColor() + " hat and I am a " + girl + ".");
+	
+	
+
 }
 }
